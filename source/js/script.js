@@ -49,18 +49,10 @@ $(function(){
             activeItem = $(this);
         }
         $(this).children(".index-post-info").fadeTo(500,1);
-        $(this).find(".index-post-title").removeClass('deactiveColor');
-        $(this).find(".index-post-title").addClass('activeColor');
-        $(this).find(".index-post-categories").children("a").removeClass('deactiveColor');
-        $(this).find(".index-post-categories").children("a").addClass('activeColor');
     }
 
     function postTitle(){
         $(this).children(".index-post-info").fadeTo(500,0);
-        $(this).find(".index-post-title").addClass('deactiveColor');
-        $(this).find(".index-post-title").removeClass('activeColor');
-        $(this).find(".index-post-categories").children("a").addClass('deactiveColor');
-        $(this).find(".index-post-categories").children("a").removeClass('activeColor');
     }
 
 

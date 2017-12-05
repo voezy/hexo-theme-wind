@@ -47,8 +47,8 @@ info:
   avatarCard: false
 img:
   # eg. site_logo: "/avatar.png"
-  site_logo: 
-  avatar: 'avatar-default.png'
+  site_logo: '/avatar-default.png'
+  avatar: '/avatar-default.png'
 sns:
 # eg.
 #  email:
