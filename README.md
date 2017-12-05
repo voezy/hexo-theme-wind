@@ -1,7 +1,9 @@
-# 特性
+# Wind
+
+## 特性
 轻量，素净，纯粹
 
-# 安装
+## 安装
 1. 下载压缩包安装  
 在wind主题的github页面[hexo-theme-wind](https://github.com/Lonezj/hexo-theme-wind)点击Clone or download，下载主题的压缩包，解压到Hexo的主题目录theme之下，并将其重命名为wind。  
 2. clone主题仓库进行安装   
@@ -10,11 +12,23 @@
 git clone https://github.com/Lonezj/hexo-theme-wind.git wind
 ```
 
-# 使用
+## 使用
 本文假设你的hexo安装目录名称为hexo。  
 站点配置文件即hexo/_config.yml。主题配置文件即hexo/themes/wind/_config.yml
 1. 在站点配置文件中把主题配置改为wind。即可完成最简洁的安装。下面是更多内容。
-2. 独立页面  
+
+2. 添加归档页面  
+如果想建立archives页面的入口，请在主题配置文件中的pages部分添加  （link的值即站点配置文件中archive_dir的值，archives是默认值）  
+```
+archives:
+  link: "/archives"
+  icon: "fa fa-file-text-o"
+``` 
+  之后，即可生成archives的入口。  
+  archives入口的图标来源于fontawesome。  
+  详情见进阶-独立页面-自定义图标
+
+## 进阶  
   - 新建独立页面  
     本主题所谓独立页面，是独立于博客文章，由顶部图形菜单所指向的页面。 
     1. 修改主题配置文件  
@@ -62,16 +76,6 @@ git clone https://github.com/Lonezj/hexo-theme-wind.git wind
       categories
     ```  
 
-  - 归档  
-    如果想建立archives页面的入口，请在主题配置文件中的pages部分添加  （link的值即站点配置文件中archive_dir的值，archives是默认值）  
-    ```
-    archives:
-      link: "/archives"
-      icon: "fa fa-file-text-o"
-    ```  
-    之后，不必在source中新建archives目录，即可生成archives的入口。  
-    page入口的图标都可以自定义，以上所述的page都是如此，它们的图标来源于fontawesome。  
-
   - 关于  
     如果希望利用自带的简单模板来建立about页面，
     在主题配置文件中的pages字段添加　　
@@ -102,7 +106,7 @@ git clone https://github.com/Lonezj/hexo-theme-wind.git wind
     在主题配置文件的info中填写好slogan，并且将avatarCard改为true，在hexo/source/img目录中放置一张图片，并且在主题配置文件img部分的avatar变量中填写avatar图片的文件名。　   
     这样，在建立了about页面的情况下，就可以看到about页面的头像卡片了。  
 
-# 集成服务
+## 集成服务
 1. 评论系统  
   - disqus  
 在主题配置文件comment部分的use变量中填入`disqus`，并在shortname中填入你的disqus shortname。  
