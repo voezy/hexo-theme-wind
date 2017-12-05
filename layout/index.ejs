@@ -1,0 +1,43 @@
+<!-- Post List -->
+<div class="index-wrapper">
+    <% page.posts.each(function (post) { %>
+    <div class="index-post-wrapper">
+
+        <!-- Post Title -->
+        <% if(post.title) { %>
+            <a class="index-post-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+        <% } else { %>
+            <a class="index-post-title" href="<%- url_for(post.path) %>">Untitled</a>
+        <% } %>
+
+        <!-- Post Info -->
+        <div class="index-post-info">
+            <% if(theme.divisionLine) { %>
+                <!-- Division Line -->
+                <%- partial('_partial/division') %> 
+            <% } %>
+
+            <div class="post-preview">
+                <%if(post.excerpt) {%>
+                    <%- strip_html(post.excerpt) %>
+                <%}else{%>
+                    <%- strip_html(truncate(post.content,{length: theme.excerpt })) %>
+                <%}%>
+            </div>
+
+            <div class="index-post-meta">
+                    <span class="index-post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
+                    <span class="index-post-categories">
+                        <%- list_categories(post.categories, {
+                        show_count: false,
+                        class: 'index-post-category',
+                        style: 'none'
+                        }) %>
+                    </span>
+                </div>
+        </div>
+    </div>
+    <% }) %>
+
+    <%- partial('_partial/pagination') %>
+</div>

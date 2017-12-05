@@ -1,0 +1,46 @@
+# ---------------------------------------------------------------
+# Layout
+# ---------------------------------------------------------------
+divisionLine: true
+showTags: false
+showCategories: true
+toTop:
+  use: ture
+  icon: fa-pagelines
+catalogBtn:
+  use: true
+  icon: fa-list-ul
+excerpt: 100
+pages: 
+
+# ---------------------------------------------------------------
+# Author Info
+# ---------------------------------------------------------------
+info:
+  slogan: "Nice to Meet you"
+  avatarCard: false
+img:
+  # eg. site_logo: "/avatar.png"
+  site_logo: 
+  avatar: 
+sns:
+# eg.
+#  email:
+#    link: "mailto:example@example.com"
+#    icon: fa-envelope-o
+
+
+# ---------------------------------------------------------------
+# Widget
+# ---------------------------------------------------------------
+# Now just for google_analytics(use: google_analytics, site_id: your tracking_id)
+analytics:
+    use: false
+    site_id:
+     
+# Comment.
+# You can use disqus(use: disqus,shortname: your disqus shortname) or livere(use: livere, livereuid: your livereuid).
+comment:
+  use: 
+  shortname: 
+  livereuid: 

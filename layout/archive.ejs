@@ -1,0 +1,26 @@
+<!-- Archive -->
+<div class="archive-wrapper">
+    <% page.posts.each(function (post) { %>
+    <div class="archive-block">
+        <!-- Post Title -->
+        <a href="<%- url_for(post.path) %>" title="<%= post.title %>">
+            <span class="archive-post-title"><%= post.title %></span>
+        </a>
+
+        <!-- Date And Categories -->
+        <div>
+            <span class="archive-post-date"><%- date(page.date, "YYYY-MM-DD") %></span>
+            <span class="archive-categories">
+                <%- list_categories(post.categories, {
+                    show_count: false,
+                    class: 'archive-post-category',
+                    style: 'none'
+                    }) %>
+            </span>
+        </div>
+    </div>
+    <% }) %>
+</div>
+
+<!-- Pagination -->
+<%- partial('_partial/pagination') %>

@@ -1,0 +1,67 @@
+@import "common"
+@import "animation"
+
+.post-wrapper 
+    position relative
+    margin 20px 0 100px 0
+    animation fadeIn 1.2s
+    display flex
+    flex-direction column
+
+.post-content 
+    font 1.1em aril
+    line-height 200%
+    blockquote 
+        overflow scroll
+    img 
+        display block
+        padding 7px
+        box-shadow #666 0px 0px 7px
+        max-width 75%
+        margin 50px auto
+        &:hover
+            cursor pointer
+
+.catalog-dropdown
+    position absolute
+.toc
+    padding 10px 10px
+    font 1em Arial
+    background-color white
+    box-shadow grey 0 0 3px
+    li 
+        list-style none
+    a
+        width 110px
+@media only screen and (max-width: 768px) {
+    .toc {
+        width: 300px
+        margin: 0 auto
+            /*不显示列表编号*/
+        li {
+            width: 230px
+            margin: 3px 0
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .toc {
+        width: 235px
+        position: absolute
+        left: -250px
+            /*不显示列表编号*/
+        li {
+            width: 180px
+        }
+    }
+}
+
+.highlight 
+    overflow scroll
+
+.post-info-wrapper 
+    children-in-center()
+    margin 50px 0 0 0
+
+.post-info-categories, .post-info-tags
+    font-size 1.2em

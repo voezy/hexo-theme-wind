@@ -1,0 +1,19 @@
+<div class="gallery">
+    <% if(page.photos != '') { %>
+        <!-- Thumbnail -->
+        <% page.photos.forEach(function (photo) { %>
+            <div class="gallery-thumbnail-wrapper col-xs-6 col-sm-6 col-md-3">
+                <div class="gallery-thumbnail" style="background-image: url('<%= photo %>');" value="<%= photo %>">
+                </div>
+            </div>
+        <% }) %>
+    <% } %>
+    
+    <div class="lightbox">
+        <!-- Close Button -->
+        <span class="close-gallery">&times;</span>
+        
+        <!-- Photo -->
+        <img class="gallery-photo">
+    </div>
+</div>

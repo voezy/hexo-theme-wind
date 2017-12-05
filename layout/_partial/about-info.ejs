@@ -1,0 +1,17 @@
+<div class="author-info-wrapper">
+    <div class="author-info">
+        <div class="avatar-top col-xs-12 col-sm-12">
+            <div>
+               <img class="avatar" src="<%= "/img" + theme.img.avatar %>" alt="<%= config.author %>'s avatar'">
+            </div>
+            <p class="author-name"><%- config.author %></p>
+        </div>
+
+        <% if(theme.info.slogan) { %>
+            <!-- Slogan Below Avatar -->
+            <div class="avatar-down  col-xs-12 col-sm-12">
+                <p class="slogan"><i class="fa fa-quote-left"></i>&nbsp<%= theme.info.slogan %></p>
+            </div>
+        <% } %>
+    </div>
+</div>

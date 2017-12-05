@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <!-- Head -->
+    <%- partial('_partial/head') %>
+    <body>
+        <div class="container">
+
+            <!-- Top Anchor -->
+            <div id="top"></div>
+
+            <!-- Header -->
+            <%- partial('_partial/header') %>
+
+            <!-- Main -->
+            <main>
+                <%- body %>
+            </main>
+
+            <!-- 'To Top' Btn-->
+            <% if(theme.toTop.use) { %>
+                <%- partial('_partial/to-top') %>
+            <% } %>
+
+            <!-- Footer -->
+            <% if(theme.footer) { %>
+                <%- partial('_partial/footer') %>
+            <% } %>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta name="description" content="<%- config.description %>">
+
+    <!-- Page Title -->
+    <% if(page.layout=='post') { %>
+        <title><%= page.title + " | " + config.title %></title>
+    <% } else { %>
+        <title><%= config.title %></title>
+    <% } %>
+    <link rel="icon" href="<%= "/img" + theme.img.site_logo %>">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <%- js('js/script.js')%>
+    <%- css('css/style.css') %>
+    <% if(theme.analytics.use == 'google_analytics') { %>
+        <%- partial('_widget/google-analytics') %>
+    <% } %>
+</head>

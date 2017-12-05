@@ -1,0 +1,80 @@
+<article class="post-wrapper">
+    <% if(page.type === 'categories') { %>
+        <!-- All Categories -->
+        <%- partial('_partial/category') %>
+    <% } else if(page.type === 'about') {%>
+        <% if(theme.info.avatarCard) { %>
+            <!-- Avatar In 'About Page' -->
+            <%- partial('_partial/about-info') %>
+        <% } %>
+    <% } %>
+
+    <% if(page.layout==='post') { %>
+        <!-- Article Catalog -->
+        <div class="catalog-dropdown col-xs-12 col-sm-12">
+            <%- toc(page.content) %>
+        </div>
+    <% } %>
+
+    <% if(page.layout == 'post'){ %>
+        <!--For now, Lightbox Only Show in Post Layout -->
+        <% if(page.photos != '') { %>
+            <!-- Gallery -->
+            <%- partial('_widget/gallery') %>
+        <% } %>
+
+        <% 
+           var hasImg = page.content.search('img');
+        %>
+        <% if(hasImg >= 0) { %>
+            <!-- Article Img Lightbox -->
+            <%- partial('_widget/gallery') %>
+        <% } %>
+    <% } %>
+
+    <!-- Article Content -->
+    <div class="post-content">
+        <%- page.content %>  
+    </div> 
+
+    <% if(theme.divisionLine) { %>
+        <!-- Division Line -->
+        <%- partial('_partial/division') %> 
+    <% } %>
+
+    <div class="post-info-wrapper">
+            <% if(page.layout === 'post') { %>
+                    <!-- Post Info -->
+                    <p><%- date(page.date, "YYYY-MM-DD") %></p>
+                    
+                    <% if(theme.showCategories) { %>
+                        <p class="post-info-categories">
+                            <%- list_categories(page.categories, {
+                            show_count: false,
+                            class: 'post-category',
+                            style: 'none'
+                            }) %>
+                        </p>
+                    <% } %>
+
+                    <% if(theme.showTags) { %>
+                        <p class="post-info-tags">
+                            <%- list_tags(page.tags, {
+                            show_count: false,
+                            class: 'post-tags',
+                            style: 'none'
+                            }) %>
+                        </p>
+                    <% } %>
+            <% } %>
+    </div>
+</article>
+
+<% if(page.comments) { %>
+    <% if(page.comments && theme.comment.use) { %>
+    <!-- Comments -->
+    <div class="post-comment-wrapper">
+        <%- partial('_widget/comment') %>
+    </div>
+    <% } %>
+<% } %>

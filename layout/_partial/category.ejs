@@ -1,0 +1,11 @@
+<div class="categories-wrapper">
+    <ul class="categories-block">
+        <%- list_categories({
+            show_count: false,
+            class: 'categories',
+            style: 'none',
+            separator: '</li><li>'
+        }) %>
+    </ul>
+</div>
+<%- partial('_partial/pagination') %>

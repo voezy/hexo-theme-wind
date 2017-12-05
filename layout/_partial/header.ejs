@@ -1,0 +1,58 @@
+<header class="header-wrapper">
+    <div class="header-title-wrapper">
+        <!-- Page Title -->
+        <p class="header-title">
+            <% if(page.layout === 'post' || page.type === 'about' || page.type === 'categories') { %> 
+                <% if(page.title) { %>
+                    <%= page.title %>
+                <% } else { %>
+                    Untitled
+                <% } %>
+            <% } else { %>  
+                <%= config.title %>
+            <% } %>
+        </p>  
+    </div>    
+
+    <% if(theme.divisionLine) { %>
+        <!-- Division Line -->
+        <%- partial('division') %> 
+    <% } %>
+    
+    <div class="header-detail">
+        <!-- Header Button -->
+        <div class="header-btn-wrapper">
+            <% if(page.layout === 'post' ) { %>
+                <span>
+                    <a class="home-btn header-btn" href="<%= config.root %>" title="homepage"><i class="fa fa-home"></i></a>
+                </span>
+
+                <% if(theme.catalogBtn.use) { %>
+                    <span>
+                        <a class="catalog-btn header-btn"><i class="fa <%= theme.catalogBtn.icon %>"></i></a>
+                    </span>
+                <% } %>
+            <% } else if(page.type === 'about' ){ %>
+                <span>
+                    <a class="home-btn header-btn" href="<%= config.root %>" title="homepage"><i class="fa fa-home"></i></a>
+                </span>
+
+                <% for (var i in theme.sns){ %>
+                    <span>
+                        <a class="header-btn" href="<%= theme.sns[i].link %> " target="_blank" title="<%= i %>"><i class="fa <%= theme.sns[i].icon %>"></i></a>
+                    </span>
+                <% } %>
+            <% } else { %>
+                <span>
+                    <a class="home-btn header-btn" href="<%= config.root %>" title="homepage"><i class="fa fa-home"></i></a>
+                </span>
+
+                <% for (var i in theme.pages){ %>
+                    <span>
+                        <a class="header-btn" href="<%= theme.pages[i].link %>" title="<%= i %>"><i class="fa <%= theme.pages[i].icon %>"></i></a>
+                    </span>
+                <% } %>
+            <% } %>
+        </div>
+    </div>
+</header>

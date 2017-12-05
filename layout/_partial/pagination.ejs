@@ -1,0 +1,10 @@
+<div class="pagination-wrapper">
+    <ul class="pagination-btn">
+        <% if (page.prev){ %>
+            <li class="previous"><a href="<%- config.root %><%- page.prev_link %>"> <i class="fa fa-angle-left "></i> </a></li>
+        <% } %>
+        <% if (page.next){ %>
+            <li class="next"><a href="<%- config.root %><%- page.next_link %>"> <i class="fa fa-angle-right"></i> </a></li>
+        <% } %>
+    </ul>
+</div>
