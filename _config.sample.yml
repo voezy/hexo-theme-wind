@@ -2,6 +2,7 @@
 # Layout
 # ---------------------------------------------------------------
 divisionLine: true
+articleImgInCenter: true
 showTags: false
 showCategories: true
 toTop:
