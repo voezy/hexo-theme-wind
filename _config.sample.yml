@@ -14,6 +14,9 @@ catalogBtn:
 excerpt: 100
 footer: true
 pages: 
+  archives:
+    link: "/archives"
+    icon: "fa fa-file-text-o"
 color:
   deactive: '#37474f'
 #  active: '#1b5e20'  # Spring
@@ -34,7 +37,6 @@ color:
 head:
   keywords: 
   - wind
-  - tech
 
 
 # ---------------------------------------------------------------
