@@ -27,16 +27,16 @@
         .activeColor{
             color: <%= theme.color.active　%>;
         }
-        .index-post-wrapper a, .header-wrapper a, .toTop{
-            color: <%= theme.color.deactive　%>;
-        }
-        .index-post-wrapper a:hover, .header-wrapper a:hover, .toTop:hover{
+        a:hover{
             color: <%= theme.color.active　%>;
         }
+        .header-btn{
+            color: <%= theme.color.deactive　%>;
+        }
         <% if(theme.articleImgInCenter){ %>
-            .post-content img{
-                margin: 50px auto;
-            }
+        .post-content img{
+            margin: 50px auto;
+        }
         <% } %>
     </style>
 </head>

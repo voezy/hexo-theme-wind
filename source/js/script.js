@@ -7,22 +7,26 @@ $(function(){
     $(".catalog-dropdown").hide();
     $("a").focus(function(){this.blur()});
 
+    $('.archive-wrapper').find('a').addClass('activeColor');
+    $('.footer-banner').find('a').addClass('activeColor');
+    $('.post-wrapper').find('a').addClass('activeColor');
     $('.index-post-title').addClass('deactiveColor');
     $('.header-title').addClass('deactiveColor');
     $('.post-date').addClass('deactiveColor');
-    
+    $('.toTop').addClass('deactiveColor');
 
-    //Header button
     
     //Show More Info in Index
     $(".index-post-wrapper").on("touchstart", postDetail);
     $(".index-post-wrapper").on("mouseenter", postDetail);
     $(".index-post-wrapper").on("mouseleave", postTitle);
+    
     //Show Catalog
     $(".catalog-btn").on("click", toggleCatalog);
     $(".catalog-dropdown").on("click", function(e){
         e.stopPropagation();
     });
+
     //Back To Top
     $("a.toTop").click(function() {
         $("html, body").animate({
@@ -33,8 +37,10 @@ $(function(){
         });
         return false;
     });
+
     //Show or Hide Gallery Photo
     $(".gallery-thumbnail").on("click",showGalleryPhoto);
+
     //Show or Hide Article Lightbox
     $(".post-content img").on("click",showGalleryPhoto);
     $(".gallery-photo").on("click",function(e){
@@ -49,10 +55,19 @@ $(function(){
             activeItem = $(this);
         }
         $(this).children(".index-post-info").fadeTo(500,1);
+        $(this).find(".index-post-title").removeClass('deactiveColor');
+        $(this).find(".index-post-title").addClass('activeColor');
+        $(this).find(".index-post-categories").children("a").removeClass('deactiveColor');
+        $(this).find(".index-post-categories").children("a").addClass('activeColor');
     }
 
     function postTitle(){
         $(this).children(".index-post-info").fadeTo(500,0);
+        $(this).children(".index-post-info").fadeTo(500,0);
+        $(this).find(".index-post-title").addClass('deactiveColor');
+        $(this).find(".index-post-title").removeClass('activeColor');
+        $(this).find(".index-post-categories").children("a").addClass('deactiveColor');
+        $(this).find(".index-post-categories").children("a").removeClass('activeColor');
     }
 
 
