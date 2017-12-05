@@ -45,7 +45,7 @@
     <div class="post-info-wrapper">
             <% if(page.layout === 'post') { %>
                     <!-- Post Info -->
-                    <p><%- date(page.date, "YYYY-MM-DD") %></p>
+                    <p class="post-date"><%- date(page.date, "YYYY-MM-DD") %></p>
                     
                     <% if(theme.showCategories) { %>
                         <p class="post-info-categories">

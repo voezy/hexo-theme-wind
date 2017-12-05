@@ -33,5 +33,10 @@
         a:hover{
             color: <%= theme.color.active　%>;
         }
+        <% if(theme.articleImgInCenter){ %>
+            .post-content img{
+                margin: 50px auto;
+            }
+        <% } %>
     </style>
 </head>

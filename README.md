@@ -123,5 +123,5 @@ archives:
 1. [Hexo](http://hexo.io/), 一个优秀的静态网页生成引擎。
 2. [jQuery](https://jquery.com/), 易用的js库。
 3. [Bootstrap](http://getbootstrap.com/), 优秀的前端框架。
-4. [Font Awesome](http://fontawesome.io/)，　优秀的图标字体库。
+4. [Font Awesome](http://fontawesome.io/), 优秀的图标字体库。
 2. 主题中含有的默认avatar来自于flaticon。  <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>  

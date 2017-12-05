@@ -9,6 +9,7 @@ $(function(){
 
     $('.index-post-title').addClass('deactiveColor');
     $('.header-title').addClass('deactiveColor');
+    $('.post-date').addClass('deactiveColor');
     
 
     //Header button
