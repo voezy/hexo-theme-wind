@@ -7,6 +7,12 @@ $(function(){
     $(".catalog-dropdown").hide();
     $("a").focus(function(){this.blur()});
 
+    $('.index-post-title').addClass('deactiveColor');
+    $('.header-title').addClass('deactiveColor');
+    
+
+    //Header button
+    
     //Show More Info in Index
     $(".index-post-wrapper").on("touchstart", postDetail);
     $(".index-post-wrapper").on("mouseenter", postDetail);
@@ -42,14 +48,18 @@ $(function(){
             activeItem = $(this);
         }
         $(this).children(".index-post-info").fadeTo(500,1);
-        $(this).find(".index-post-title").css({"color":"rgb(26, 67, 121)"});
-        $(this).find(".index-post-categories").children("a").css({"color":"rgb(26, 67, 121)"});
+        $(this).find(".index-post-title").removeClass('deactiveColor');
+        $(this).find(".index-post-title").addClass('activeColor');
+        $(this).find(".index-post-categories").children("a").removeClass('deactiveColor');
+        $(this).find(".index-post-categories").children("a").addClass('activeColor');
     }
 
     function postTitle(){
         $(this).children(".index-post-info").fadeTo(500,0);
-        $(this).find(".index-post-title").css({"color":"rgb(77, 78, 82)"});
-        $(this).find(".index-post-categories").children("a").css({"color":"rgb(77, 78, 82)"});
+        $(this).find(".index-post-title").addClass('deactiveColor');
+        $(this).find(".index-post-title").removeClass('activeColor');
+        $(this).find(".index-post-categories").children("a").addClass('deactiveColor');
+        $(this).find(".index-post-categories").children("a").removeClass('activeColor');
     }
 
 

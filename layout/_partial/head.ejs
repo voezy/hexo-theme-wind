@@ -1,7 +1,9 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-    <meta name="description" content="<%- config.description %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="<%= config.author %>">
+    <meta name="description" itemprop="description" content="<% if(page.description) { %><%= page.description %><% } else if(page.excerpt){ %><%= strip_html(page.excerpt).replace(/^s*/, '').replace(/s*$/, '') %><% } else if (config.description){ %><%= config.description %><% } %>">
+    <meta name="keywords" content="<%= theme.head.keywords %><% if(page.tags && page.tags.each) { page.tags.each(function(tag) { %><%- ',' + tag.name %><% })} %>">
 
     <!-- Page Title -->
     <% if(page.layout=='post') { %>
@@ -18,4 +20,18 @@
     <% if(theme.analytics.use == 'google_analytics') { %>
         <%- partial('_widget/google-analytics') %>
     <% } %>
+    <style>
+        .deactiveColor{
+            color: <%= theme.color.deactive　%>;
+        }
+        .activeColor{
+            color: <%= theme.color.active　%>;
+        }
+        a{
+            color: <%= theme.color.deactive　%>;
+        }
+        a:hover{
+            color: <%= theme.color.active　%>;
+        }
+    </style>
 </head>
