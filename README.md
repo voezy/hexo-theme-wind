@@ -1,8 +1,31 @@
-# Wind
+## 特性    
+Wind
+>轻量，素净。   
+   
+<img style="display: block; margin: 20px auto;" alt="hexo-theme-wind" src="http://p0iviide2.bkt.clouddn.com/wind-summer-render.jpg"/>
+    
+<h2 align="center"><a href="http://blog.mrdays.tech" target="_blank">Hexo-Theme-Wind</a></h1>    
 
-## 特性
-轻量，素净，纯粹
+## Contents 目录  
 
+- [预览](#预览)
+- [安装](#安装)
+- [使用](#使用)
+- [更多](#更多)
+- [集成服务](#集成服务)
+- [Credit](#Credit)
+
+## 预览   
+### 主页    
+![wind-summer-home](http://p0iviide2.bkt.clouddn.com/doc/sm/wind-summer-home-sm.gif)    
+### 文章   
+![wind-summer-article](http://p0iviide2.bkt.clouddn.com/doc/sm/wind-summer-article-img-sm.gif)
+### 关于   
+![wind-summer-about](http://p0iviide2.bkt.clouddn.com/doc/sm/wind-summer-about-sm.png)    
+### 画廊   
+![wind-summer-gallery](http://p0iviide2.bkt.clouddn.com/doc/sm/wind-summer-gallery-sm.gif)
+### 分类    
+![wind-summer-category](http://p0iviide2.bkt.clouddn.com/doc/sm/wind-summer-categories-sm.png)
 ## 安装
 ### 下载release包解压安装(用于稳定版)
 在wind主题的release页面[release-hexo-theme-wind](https://github.com/Lonezj/hexo-theme-wind/releases)，下载需要的release，解压到Hexo的主题目录theme之下，并将其重命名为wind。 
@@ -29,9 +52,9 @@ archives:
 
 之后，即可生成archives的入口。  
 archives入口的图标来源于fontawesome。  
-详情见进阶-新建独立页面-自定义图标    
+详情见[自定义图标](#自定义图标)    
 
-## 进阶  
+## 更多  
 ### 新建独立页面  
 本主题所谓独立页面，是独立于博客文章，由顶部图形菜单所指向的页面。 
 
@@ -82,7 +105,7 @@ type:
 ```
 
 ### 关于  
-#### 关于   
+#### 关于页面   
 
 如果希望利用自带的简单模板来建立about页面，
 在主题配置文件中的pages字段添加  
@@ -101,18 +124,64 @@ type:
 
 #### 头像卡片  
 即主题自带的头像小卡片。  
-在主题配置文件的info中填写好slogan，并且将avatarCard改为true，在hexo/source/img目录中放置一张图片，并且在主题配置文件img部分的avatar变量中填写'/avatar图片的文件名'。　   
+在主题配置文件的info中填写好slogan，并且将avatarCard改为true，在hexo/source/img目录中放置一张图片，并且在主题配置文件img部分的avatar变量中填写avatar图片的文件名。　   
 这样，在建立了about页面的情况下，就可以看到about页面的头像卡片了。  
 
 ### 添加SNS  
-即about页面顶部的sns图标栏。  
-在主题配置文件的sns字段增加相应sns的名称以及它的链接和fontawesome图标名称即可 (sns中的link记得要加上`https://`或`http://` )。   
+即about页面顶部的SNS图标栏。  
+在主题配置文件的SNS字段增加相应sns的名称以及它的链接和fontawesome图标名称即可 (SNS中的link记得要加上`https://`或`http://` )。   
 比如  
 ```
 weibo:   
   link: "http://www.weibo.com"
   icon: "fa fa-weibo"
-```
+```   
+### 主题配置解释
+#### Layout部分
+- divisionLine, 博客各处的分割线
+true，显示
+false， 不显示
+- articleImgInCenter, 文章中的图片
+true， 水平居中
+false， 靠左
+- showTags, 文末文章标签
+true， 显示
+false， 不显示 
+- showCategories, 文末文章分类
+true， 显示
+false， 不显示 
+- toTop, 到达顶部按钮
+true， 显示
+false， 不显示 
+- catalogBtn, 博客顶部目录按钮
+true， 显示
+false， 不显示 
+- excerpt, 博客首页文章预览的字数
+- footer, 博客底部的信息及声明
+true， 显示
+false， 不显示 
+- pages, 即独立页面的设置: [新建独立页面](#新建独立页面)
+- color, 博客部分字体颜色
+deactive, 链接、按钮未聚焦时的颜色
+active, 链接、按钮聚焦时的颜色
+可用RGB或16进制颜色值。
+配置中已预置了几种简单的字体配色，更改注释就可以使用。
+
+#### Blog Info部分
+- head中的keywords
+即博客的关键词，用于网页描述。文章的标签会自动加入keywords中。    
+
+#### Author Info部分    
+- info和img
+主要是"关于"页面头像卡片所需信息。
+slogan是avatar图片之下的文字。
+avatarCard是头像卡片控制选项，true为开启，false未关闭。
+avatar是头像卡片中的图片。建立关于页面，开启头像卡片之后，根据默认值会显示一张来自flaticon的图片，要更改图片，请加入另一张图片，并修改此值。参看：[头像卡片](#头像卡片)。
+site_logo是博客在浏览器标签页上所显示的图标。
+
+- sns
+即关于页面顶部的社交网站按钮。参看：[添加SNS ](#添加SNS )
+余下的Widget及comment即为以下集成服务选项。    
 
 ## 集成服务
 ### 评论系统  
@@ -128,7 +197,7 @@ weibo:
 在主题配置文件analytics部分的use变量中填入`google_analytics`，并在site_id中填入你的google analytics的tracking_id。
 
 ## Credit
-1. [Hexo](http://hexo.io/), 一个优秀的静态网页生成引擎。
+1. [Hexo](http://hexo.io/), 一个优秀的静态博客生成引擎。
 2. [jQuery](https://jquery.com/), 易用的js库。
 3. [Bootstrap](http://getbootstrap.com/), 优秀的前端框架。
 4. [Font Awesome](http://fontawesome.io/), 优秀的图标字体库。

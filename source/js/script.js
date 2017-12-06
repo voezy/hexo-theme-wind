@@ -8,11 +8,13 @@ $(function(){
     $("a").focus(function(){this.blur()});
 
     $('.archive-wrapper').find('a').addClass('activeColor');
+    $('.pagination-btn').find('a').addClass('deactiveColor');
     $('.footer-banner').find('a').addClass('activeColor');
     $('.post-wrapper').find('a').addClass('activeColor');
     $('.index-post-title').addClass('deactiveColor');
     $('.header-title').addClass('deactiveColor');
     $('.post-date').addClass('deactiveColor');
+    $('.author-name').addClass('deactiveColor');
     $('.toTop').addClass('deactiveColor');
 
     
