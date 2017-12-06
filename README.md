@@ -17,13 +17,13 @@ Wind
 
 ## 预览   
 ### 主页    
-![wind-summer-home](http://p0iviide2.bkt.clouddn.com/doc/sm/wind-summer-home-sm.gif)    
+![wind-summer-home](http://p0iviide2.bkt.clouddn.com/doc/sm/wind-summer-home-sm.png)    
 ### 文章   
-![wind-summer-article](http://p0iviide2.bkt.clouddn.com/doc/sm/wind-summer-article-img-sm.gif)
+![wind-summer-article](http://p0iviide2.bkt.clouddn.com/doc/sm/wind-summer-article-img-sm.png)
 ### 关于   
 ![wind-summer-about](http://p0iviide2.bkt.clouddn.com/doc/sm/wind-summer-about-sm.png)    
 ### 画廊   
-![wind-summer-gallery](http://p0iviide2.bkt.clouddn.com/doc/sm/wind-summer-gallery-sm.gif)
+![wind-summer-gallery](http://p0iviide2.bkt.clouddn.com/doc/sm/wind-summer-gallery-sm.png)
 ### 分类    
 ![wind-summer-category](http://p0iviide2.bkt.clouddn.com/doc/sm/wind-summer-categories-sm.png)
 ## 安装
