@@ -8,8 +8,24 @@
     <!-- Page Title -->
     <% if(page.layout=='post') { %>
         <title><%= page.title + " | " + config.title %></title>
+    <% } else if(is_home()) { %>
+        <title><%= "Home" + " | " + config.title %></title>
+    <% } else if(is_archive()) { %>
+        <title><%= "Archive" + " | " + config.title %></title>
+    <% } else if(is_category()) { %>
+        <title><%= "Categories" + " | " + config.title %></title>
+    <% } else if(is_tag()) { %>
+        <title><%= "Tags" + " | " + config.title %></title>
     <% } else { %>
-        <title><%= config.title %></title>
+        <% if(page.type === 'about') { %>
+            <title><%= "About" + " | " + config.title %></title>
+        <% } else if(page.type === 'categories') { %>
+            <title><%= "Categories" + " | " + config.title %></title>        
+        <% } else if(page.type === 'gallery') { %>
+            <title><%= "Gallery" + " | " + config.title %></title>        
+        <% } else { %>
+            <title><%= config.title %></title>
+        <% } %>
     <% } %>
     <link rel="icon" href="<%= "/img" + theme.img.site_logo %>">
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
