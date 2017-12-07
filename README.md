@@ -13,7 +13,6 @@ Wind
 - [使用](#使用)
 - [更多](#更多)
 - [集成服务](#集成服务)
-- [Credit](#Credit)
 
 ## 预览   
 ### 主页    
@@ -195,10 +194,3 @@ site_logo是博客在浏览器标签页上所显示的图标。
 ### 分析服务  
 #### Google Analytics  
 在主题配置文件analytics部分的use变量中填入`google_analytics`，并在site_id中填入你的google analytics的tracking_id。
-
-## Credit
-1. [Hexo](http://hexo.io/), 一个优秀的静态博客生成引擎。
-2. [jQuery](https://jquery.com/), 易用的js库。
-3. [Bootstrap](http://getbootstrap.com/), 优秀的前端框架。
-4. [Font Awesome](http://fontawesome.io/), 优秀的图标字体库。
-2. [Flaticon](https://www.flaticon.com/), 主题中含有的默认avatar来自于flaticon。
