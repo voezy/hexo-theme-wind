@@ -193,4 +193,12 @@ site_logo是博客在浏览器标签页上所显示的图标。
 
 ### 分析服务  
 #### Google Analytics  
-在主题配置文件analytics部分的use变量中填入`google_analytics`，并在site_id中填入你的google analytics的tracking_id。
+在主题配置文件analytics部分的use变量中填入`google_analytics`，并在site_id中填入你的google analytics的tracking_id。    
+
+### 网易云音乐外链播放器
+在文章的front-matter部分加入neteasemusic: '[音乐链接]'即可。如    
+```
+neteasemusic: 'http://music.163.com/#/m/song?id=38358217'
+```   
+音乐链接一般可以通过在歌单页面右击目标单曲，点击复制链接来获得。    
+**需要注意的是，有版权限制的歌曲生成的外链播放器是无法播放的**。所以如果出现某首歌在文章中无法播放，很有可能是因为这首歌有版权限制。

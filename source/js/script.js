@@ -7,6 +7,10 @@ $(function(){
     $(".catalog-dropdown").hide();
     $("a").focus(function(){this.blur()});
 
+    $('pre').addClass('linenums');
+    $('pre').addClass('prettyprint');
+    prettyPrint();
+
     $('.archive-wrapper').find('a').addClass('activeColor');
     $('.pagination-btn').find('a').addClass('deactiveColor');
     $('.footer-banner').find('a').addClass('activeColor');

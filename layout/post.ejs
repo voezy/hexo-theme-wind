@@ -32,6 +32,11 @@
         <% } %>
     <% } %>
 
+    <% if(page.neteasemusic) { %>
+        <!-- Netease Music Outchain -->
+        <%- partial('_widget/bgmusic') %>
+    <% } %>
+
     <!-- Article Content -->
     <div class="post-content">
         <%- page.content %>  
