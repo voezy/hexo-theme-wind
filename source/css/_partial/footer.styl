@@ -1,14 +1,15 @@
 @import "common"
-
+@import "variables"
 .footer-wrapper 
-    width 100%
-    children-in-center()
-
+  width 100%
+  children-in-center()
+  font-family $font-default
+  font-size 1em
 
 .footer-banner-wrapper 
-    children-in-center()
-    margin 20px auto
-    a 
-        font-weight bold
-        &:hover
-            text-decoration none
+  children-in-center()
+  margin 20px auto
+  a 
+    font-weight bold
+    &:hover
+      text-decoration none

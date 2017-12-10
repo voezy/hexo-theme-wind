@@ -1,30 +1,31 @@
 @import "common"
 @import "animation"
-
+@import "variables"
 .header-wrapper 
-    height 200px
-    children-in-center()
+  height 200px
+  children-in-center()
 
 .header-title-wrapper 
-    padding 40px 0 20px 0
-    width 100%
-    children-in-center()
+  padding 40px 0 20px 0
+  width 100%
+  children-in-center()
 
-.header-title 
-    font 2em Helvetica Aril
+.header-title
+  font-family $font-default
+  font-size 2em
 
 .header-detail 
-    children-in-center()
+  children-in-center()
 
 .header-btn-wrapper 
-    margin 5px auto
+  margin 5px auto
 
 .header-btn 
-    display inline-block
-    margin 10px 10px
-    font-size 20px
-    &:hover
-        animation rotate 0.5s
+  display inline-block
+  margin 10px 10px
+  font-size 20px
+  &:hover
+    animation rotate 0.5s
 
 
 

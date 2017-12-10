@@ -142,7 +142,8 @@ true，显示
 false， 不显示
 - articleImgInCenter, 文章中的图片
 true， 水平居中
-false， 靠左
+false， 靠左    
+**emoji相关**: 如果使用hexo-filter-github-emojis，在开启了图片居中的情况下，要在站点配置中把githubEmojis中的unicode设为true，不然表情也会被居中。
 - showTags, 文末文章标签
 true， 显示
 false， 不显示 

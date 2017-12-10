@@ -1,58 +1,62 @@
 @import "common"
 @import "animation"
-
+@import "variables"
 .post-wrapper 
-    position relative
-    margin 20px 0 100px 0
-    animation fadeIn 1.2s
-    display flex
-    flex-direction column
-
-.post-content 
-    font 1.15em Helvetica Aril
-    line-height 200%
-    blockquote 
-        overflow auto
-    img 
-        display block
-        padding 7px
-        box-shadow #666 0px 0px 7px
-        max-width 75%
-        &:hover
-            cursor pointer
+  position relative
+  margin 20px 0 100px 0
+  animation fadeIn 1.2s
+  display flex
+  flex-direction column
+.post-content
+  font-family $font-default
+  line-height 200%
+  blockquote 
+    overflow auto
+  img 
+    display block
+    padding 7px
+    box-shadow #666 0px 0px 7px
+    max-width 75%
+    &:hover
+      cursor pointer
+@media only screen and (max-width: 768px)
+  .post-content
+    font-size $font-content-size-xs
+@media only screen and (min-width: 768px)
+  .post-content
+    font-size $font-content-size-sm
 
 .catalog-dropdown
-    position absolute
+  position absolute
 .toc
-    padding 10px 10px
-    font 1em Arial
-    background-color white
-    box-shadow grey 0 0 3px
-    li 
-        list-style none
-    a
-        width 110px
+  padding 10px 10px
+  font-family $font-default
+  font-size 1em
+  background-color white
+  box-shadow grey 0 0 3px
+  li 
+    list-style none
+  a
+    width 110px
 @media only screen and (max-width: 768px) {
-    .toc {
-        width: 320px
-        margin: 0 auto
-            /*不显示列表编号*/
-        li {
-            width: 230px
-            margin: 3px 0
-        }
+  .toc {
+    width: 320px
+    margin: 0 auto
+    li {
+      width: 230px
+      margin: 3px 0
     }
+  }
 }
 @media only screen and (min-width: 768px) {
-    .toc {
-        width: 310px
-        position: absolute
-        left: -250px
-            /*不显示列表编号*/
-        li {
-            width: 180px
-        }
+  .toc {
+    width: 310px
+    position: absolute
+    left: -250px
+    li {
+      width: 180px
     }
+  }
 }
 
 .bgmusic
@@ -60,11 +64,11 @@
 code
   word-break break-all
 
-
 .post-info-wrapper 
-    children-in-center()
-    margin 50px 0 0 0
+  children-in-center()
+  margin 50px 0 0 0
 
 .post-info-categories, .post-info-tags
-    font-size 1.2em
+  font-family $font-default
+  font-size 1.2em
 
