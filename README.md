@@ -175,7 +175,7 @@ active, 链接、按钮聚焦时的颜色
 - info和img    
 主要是"关于"页面头像卡片所需信息。    
 slogan是avatar图片之下的文字。   
-avatarCard是头像卡片控制选项，true为开启，false未关闭。   
+avatarCard是头像卡片控制选项，true为开启，false为关闭。   
 avatar是头像卡片中的图片。建立关于页面，开启头像卡片之后，根据默认值会显示一张来自flaticon的图片，要更改图片，请加入另一张图片，并修改此值。参看：[头像卡片](#头像卡片)。    
 site_logo是博客在浏览器标签页上所显示的图标。   
 
