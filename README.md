@@ -137,60 +137,60 @@ weibo:
 ```   
 ### 主题配置解释
 #### Layout部分
-- divisionLine, 博客各处的分割线
-true，显示
+- divisionLine, 博客各处的分割线    
+true，显示   
 false， 不显示
-- articleImgInCenter, 文章中的图片
-true， 水平居中
+- articleImgInCenter, 文章中的图片    
+true， 水平居中    
 false， 靠左    
 **emoji相关**: 如果使用hexo-filter-github-emojis，在开启了图片居中的情况下，要在站点配置中把githubEmojis中的unicode设为true，不然表情也会被居中。
-- showTags, 文末文章标签
-true， 显示
+- showTags, 文末文章标签    
+true， 显示    
 false， 不显示 
-- showCategories, 文末文章分类
-true， 显示
+- showCategories, 文末文章分类    
+true， 显示    
 false， 不显示 
-- toTop, 到达顶部按钮
-true， 显示
+- toTop, 到达顶部按钮   
+true， 显示    
 false， 不显示 
-- catalogBtn, 博客顶部目录按钮
-true， 显示
+- catalogBtn, 博客顶部目录按钮    
+true， 显示    
 false， 不显示 
-- excerpt, 博客首页文章预览的字数
-- footer, 博客底部的信息及声明
-true， 显示
-false， 不显示 
-- pages, 即独立页面的设置: [新建独立页面](#新建独立页面)
-- color, 博客部分字体颜色
-deactive, 链接、按钮未聚焦时的颜色
-active, 链接、按钮聚焦时的颜色
-可用RGB或16进制颜色值。
-配置中已预置了几种简单的字体配色，更改注释就可以使用。
+- excerpt, 博客首页文章预览的字数    
+- footer, 博客底部的信息及声明    
+true， 显示    
+false， 不显示    
+- pages, 即独立页面的设置: [新建独立页面](#新建独立页面)    
+- color, 博客部分字体颜色   
+deactive, 链接、按钮未聚焦时的颜色    
+active, 链接、按钮聚焦时的颜色   
+可用RGB或16进制颜色值。    
+配置中已预置了几种简单的字体配色，更改注释就可以使用。   
 
-#### Blog Info部分
-- head中的keywords
+#### Blog Info部分    
+- head中的keywords    
 即博客的关键词，用于网页描述。文章的标签会自动加入keywords中。    
 
 #### Author Info部分    
-- info和img
-主要是"关于"页面头像卡片所需信息。
-slogan是avatar图片之下的文字。
-avatarCard是头像卡片控制选项，true为开启，false未关闭。
-avatar是头像卡片中的图片。建立关于页面，开启头像卡片之后，根据默认值会显示一张来自flaticon的图片，要更改图片，请加入另一张图片，并修改此值。参看：[头像卡片](#头像卡片)。
-site_logo是博客在浏览器标签页上所显示的图标。
+- info和img    
+主要是"关于"页面头像卡片所需信息。    
+slogan是avatar图片之下的文字。   
+avatarCard是头像卡片控制选项，true为开启，false未关闭。   
+avatar是头像卡片中的图片。建立关于页面，开启头像卡片之后，根据默认值会显示一张来自flaticon的图片，要更改图片，请加入另一张图片，并修改此值。参看：[头像卡片](#头像卡片)。    
+site_logo是博客在浏览器标签页上所显示的图标。   
 
-- sns
-即关于页面顶部的社交网站按钮。参看：[添加SNS ](#添加SNS )
-余下的Widget及comment即为以下集成服务选项。    
+- sns   
+即关于页面顶部的社交网站按钮。参看：[添加SNS ](#添加SNS )   
+余下的Widget及comment即为以下集成服务选项。      
 
 ## 集成服务
 ### 评论系统  
 #### disqus  
-在主题配置文件comment部分的use变量中填入`disqus`，并在shortname中填入你的disqus shortname。  
+在主题配置文件comment部分的use变量中填入`disqus`，并在shortname中填入你的disqus shortname。   
 #### livere  
-在主题配置文件comment部分的use变量中填入`livere`，并在livereuid中填入你的livere代码的data-uid值。一般在登录livere后，在管理页面的代码管理选项卡中可以找到。
+在主题配置文件comment部分的use变量中填入`livere`，并在livereuid中填入你的livere代码的data-uid值。一般在登录livere后，在管理页面的代码管理选项卡中可以找到。   
 #### 关闭文章的评论功能  
-在该独立页面文件夹下的index.md文件的front-matter中，加入`comments:  false`
+在该独立页面文件夹下的index.md文件的front-matter中，加入`comments:  false`    
 
 ### 分析服务  
 #### Google Analytics  
