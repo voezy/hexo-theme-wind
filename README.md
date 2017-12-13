@@ -1,9 +1,9 @@
 ## 特性    
 Wind
 >轻量，素净。   
-   
+
 <img style="display: block; margin: 20px auto;" alt="hexo-theme-wind" src="http://p0iviide2.bkt.clouddn.com/wind-summer-render.jpg"/>
-    
+
 <h2 align="center"><a href="http://blog.mrdays.tech" target="_blank">Hexo-Theme-Wind</a></h1>    
 
 ## Contents 目录  
@@ -27,7 +27,7 @@ Wind
 ![wind-summer-category](http://p0iviide2.bkt.clouddn.com/doc/sm/wind-summer-categories-sm.png)
 ## 安装
 ### 下载release包解压安装(用于稳定版)
-在wind主题的release页面[release-hexo-theme-wind](https://github.com/Lonezj/hexo-theme-wind/releases)，下载需要的release，解压到Hexo的主题目录theme之下，并将其重命名为wind。 
+在wind主题的release页面[release-hexo-theme-wind](https://github.com/Lonezj/hexo-theme-wind/releases)，下载需要的release，解压到Hexo的主题目录theme之下，并将其重命名为wind。
 ### 下载压缩包安装(用于快速版)  
 在wind主题的github页面[hexo-theme-wind](https://github.com/Lonezj/hexo-theme-wind)点击Clone or download，下载主题的压缩包，解压到Hexo的主题目录theme之下，并将其重命名为wind。  
 ### clone主题仓库进行安装(用于快速版)   
@@ -55,7 +55,7 @@ archives入口的图标来源于fontawesome。
 
 ## 更多  
 ### 新建独立页面  
-本主题所谓独立页面，是独立于博客文章，由顶部图形菜单所指向的页面。 
+本主题所谓独立页面，是独立于博客文章，由顶部图形菜单所指向的页面。
 
 #### 修改主题配置文件  
 在主题配置文件(hexo/themes/wind/_config.yml)的pages部分添加相关配置(其中的icon，所指的就是下一点所说的fontawesome图标名称。  )  
@@ -73,7 +73,7 @@ page的名称:
 #### 建立独立页面目录  
 在hexo/source目录新建与该page的相对路径（也就是之前所设置page的link值）同名的目录，并在其中建立index.md文件。最后在这个index.md文件中添加相关信息以及你想要显示在该page的内容。  
 
-### 画廊 
+### 画廊
 
 建立独立页面，在index.md文件的front-matter中把layout设置为post(必选，否则不会生成画廊)，把图片链接放到photos之下。这个文件的头部应该类似于下面所示：  
 ```
@@ -146,16 +146,16 @@ false， 靠左
 **emoji相关**: 如果使用hexo-filter-github-emojis，在开启了图片居中的情况下，要在站点配置中把githubEmojis中的unicode设为true，不然表情也会被居中。
 - showTags, 文末文章标签    
 true， 显示    
-false， 不显示 
+false， 不显示
 - showCategories, 文末文章分类    
 true， 显示    
-false， 不显示 
+false， 不显示
 - toTop, 到达顶部按钮   
 true， 显示    
-false， 不显示 
+false， 不显示
 - catalogBtn, 博客顶部目录按钮    
 true， 显示    
-false， 不显示 
+false， 不显示
 - excerpt, 博客首页文章预览的字数    
 - footer, 博客底部的信息及声明    
 true， 显示    
@@ -180,7 +180,7 @@ avatar是头像卡片中的图片。建立关于页面，开启头像卡片之�
 site_logo是博客在浏览器标签页上所显示的图标。   
 
 - sns   
-即关于页面顶部的社交网站按钮。参看：[添加SNS ](#添加SNS )   
+即关于页面顶部的社交网站按钮。参看：[添加SNS](#添加SNS)   
 余下的Widget及comment即为以下集成服务选项。      
 
 ## 集成服务
