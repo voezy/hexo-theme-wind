@@ -1,6 +1,12 @@
 <% 
     var musicUrl = page.neteasemusic;
-    var music = musicUrl.slice(musicUrl.indexOf("id=") + 3,musicUrl.length);
+    var songIDStart = musicUrl.indexOf("id=") + 3;
+    if(musicUrl.indexOf("&user") > -1){
+      var songIDEnd = musicUrl.indexOf("&user");
+    } else {
+        songIDEnd = musicUrl.length;
+    }
+    var music = musicUrl.slice(songIDStart, songIDEnd);
 %>
 <div class="bgmusic">
     <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=<%= music %>&auto=0&height=66"></iframe>
