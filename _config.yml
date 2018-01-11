@@ -1,0 +1,70 @@
+# ---------------------------------------------------------------
+# Layout
+# ---------------------------------------------------------------
+divisionLine: true
+articleImgInCenter: true
+showTags: false
+showCategories: true
+toTop:
+  use: ture
+  icon: fa-pagelines
+catalogBtn:
+  use: true
+  icon: fa-list-ul
+excerpt: 100
+footer: true
+pages: 
+  archives:
+    link: "/archives"
+    icon: "fa fa-file-text-o"
+color:
+  deactive: '#37474f'
+#  active: '#1b5e20'  # Spring
+  active: '#006064'  # Summer
+#  active: '#8d6e63'  # Autumn
+#  active: '#607d8b'  # Winter
+#  active: '#b71c1c'  # Passion
+
+
+# ---------------------------------------------------------------
+# Blog Info
+# ---------------------------------------------------------------
+# If your article have tags, it will also be contained in the article html page's head.
+# For a single article, you can add description in it's front-matter，than this article has it's own html description.
+# Otherwise it's html description will only contain your site description.(hexo/_config.yml, #site, description)
+# Description loading order: page description->page excerpt->blog description. When one of them was loaded, all of the rest will not be loaded.
+head:
+  keywords: 
+
+
+# ---------------------------------------------------------------
+# Author Info
+# ---------------------------------------------------------------
+info:
+  slogan: "Nice to Meet you"
+  avatarCard: false
+img:
+  # eg. site_logo: "/avatar.png"
+  site_logo: '/avatar-default.png'
+  avatar: '/avatar-default.png'
+sns:
+# eg.
+#  email:
+#    link: "mailto:example@example.com"
+#    icon: fa-envelope-o
+
+
+# ---------------------------------------------------------------
+# Widget
+# ---------------------------------------------------------------
+# Now just for google_analytics(use: google_analytics, site_id: your tracking_id)
+analytics:
+    use: false
+    site_id:
+     
+# Comment
+# You can use disqus(use: disqus,shortname: your disqus shortname) or livere(use: livere, livereuid: your livereuid)
+comment:
+  use: 
+  shortname: 
+  livereuid: 
