@@ -4,7 +4,7 @@ Wind
 
 <img style="display: block; margin: 20px auto;" alt="hexo-theme-wind" src="http://p0iviide2.bkt.clouddn.com/wind-summer-render.jpg"/>
 
-<h2 align="center"><a href="http://blog.mrdays.tech" target="_blank">Hexo-Theme-Wind</a></h1>    
+<h2 align="center"><a href="https://blog.voezy.com/" target="_blank">Hexo-Theme-Wind</a></h1>    
 
 ## Contents 目录  
 
@@ -27,13 +27,13 @@ Wind
 ![wind-summer-category](http://p0iviide2.bkt.clouddn.com/doc/sm/wind-summer-categories-sm.png)
 ## 安装
 ### 下载release包解压安装(用于稳定版)
-在wind主题的release页面[release-hexo-theme-wind](https://github.com/Lonezj/hexo-theme-wind/releases)，下载需要的release，解压到Hexo的主题目录theme之下，并将其重命名为wind。
+在wind主题的release页面[release-hexo-theme-wind](https://github.com/voezy/hexo-theme-wind/releases)，下载需要的release，解压到Hexo的主题目录theme之下，并将其重命名为wind。
 ### 下载压缩包安装(用于快速版)  
-在wind主题的github页面[hexo-theme-wind](https://github.com/Lonezj/hexo-theme-wind)点击Clone or download，下载主题的压缩包，解压到Hexo的主题目录theme之下，并将其重命名为wind。  
+在wind主题的github页面[hexo-theme-wind](https://github.com/voezy/hexo-theme-wind)点击Clone or download，下载主题的压缩包，解压到Hexo的主题目录theme之下，并将其重命名为wind。  
 ### clone主题仓库进行安装(用于快速版)   
 在终端进入Hexo的主题目录themes，输入命令下载主题文件到wind目录中  
 ```
-git clone https://github.com/Lonezj/hexo-theme-wind.git wind
+git clone https://github.com/voezy/hexo-theme-wind.git wind
 ```
 
 ## 使用
