@@ -39,7 +39,7 @@ git clone https://github.com/voezy/hexo-theme-wind.git wind
 ## 使用
 本文假设你的hexo安装目录名称为hexo。  
 站点配置文件即hexo/_config.yml。主题配置文件即hexo/themes/wind/_config.yml。  
-在站点配置文件中把主题配置改为wind，即可完成最简洁的安装。下面是更多内容。
+在站点配置文件中把主题配置改为wind，并且将 `highlight` 中的 `enable` 设置为 `false` （因为主题中使用了google/code-prettify这个代码高亮js库），即可完成最简洁的安装。下面是更多内容。
 
 ### 添加归档页面  
 如果想建立archives页面的入口，请在主题配置文件中的pages部分添加  （link的值即站点配置文件中archive_dir的值，archives是默认值）  
@@ -165,7 +165,6 @@ false， 不显示
 deactive, 链接、按钮未聚焦时的颜色    
 active, 链接、按钮聚焦时的颜色   
 可用RGB或16进制颜色值。    
-配置中已预置了几种简单的字体配色，更改注释就可以使用。   
 
 #### Blog Info部分    
 - head中的keywords    

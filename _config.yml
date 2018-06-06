@@ -19,11 +19,7 @@ pages:
     icon: "fa fa-file-text-o"
 color:
   deactive: '#37474f'
-#  active: '#1b5e20'  # Spring
-  active: '#006064'  # Summer
-#  active: '#8d6e63'  # Autumn
-#  active: '#607d8b'  # Winter
-#  active: '#b71c1c'  # Passion
+  active: '#006064'  
 
 
 # ---------------------------------------------------------------
